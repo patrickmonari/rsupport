@@ -54,7 +54,9 @@ library(sjmisc)
 library(effects)
 library(sjstats)
 library(webshot)
+library(Hmisc)
 library(conflicted)
+
 tidymodels_prefer()
 
 conflicts_prefer(dplyr::mutate)
