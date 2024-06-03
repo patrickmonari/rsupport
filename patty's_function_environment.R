@@ -16,3 +16,6 @@ devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/combin
 # For bootstrapped coefficient estimates
 devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/lm_bootstrapping.R?raw=true")
 devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/lmer_bootstrapping.R?raw=true")
+
+# For stacked USV plots
+devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/lstacked_USV_plots.R?raw=true")
