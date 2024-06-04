@@ -1,0 +1,23 @@
+# Commit changes to main branch
+1. cd /path/to/your/folder
+2. git add . # Add the files/changes to the staging area
+3. git commit -m "Your commit message" # Commit the changes with a message
+4. git push -u origin main # Push the changes to the GitHub repository
+
+
+# Pull from main branch
+1. git checkout main # Ensure you are on the main branch
+2. git pull origin main # Pull changes from the remote main branch
+
+
+# General stuff
+1. git status
+2. git branch
+
+
+# If first time, general setup:
+1. cd /path/to/your/folder
+2. git init # #nitialize a Git repository in your local folder
+3. git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git # Add the remote GitHub repository. Replace YOUR-USERNAME with your GitHub username and YOUR-REPOSITORY with the name of your repository
+# NOTE: will need to generate a PAT
+
