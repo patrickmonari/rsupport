@@ -79,13 +79,13 @@ generate_lmer_table <- function(data, formula_str, output_label = "lmer_table", 
     column_spec(1, bold = TRUE) %>%
     column_spec(2:3, width = "2cm") %>%
     column_spec(4, width = "3cm") %>%
-    column_spec(5, width = "1.3cm") %>%
-    column_spec(6, width = "1.3cm") %>%
+    column_spec(5, width = "1.4cm") %>%
+    column_spec(6, width = "1.4cm") %>%
     column_spec(7, width = "2cm") %>%
     row_spec(0, bold = TRUE) %>%
     save_kable(file = html_file_name)
   
-  webshot(url = html_file_name, file = png_file_name, selector = "table", zoom = 2)
+  webshot2::webshot(url = html_file_name, file = png_file_name, selector = "table", zoom = 2)
   
   cat("HTML and PNG generated successfully!\n")
   

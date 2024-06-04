@@ -89,7 +89,7 @@ generate_lm_table <- function(data, formula_str, output_label, caption_label) {
     row_spec(0, bold = TRUE) %>%
     save_kable(file = html_file_name)
   
-  webshot(url = html_file_name, file = png_file_name, selector = "table", zoom = 2)
+  webshot2::webshot(url = html_file_name, file = png_file_name, selector = "table", zoom = 2)
   
   cat("HTML and PNG generated successfully!\n")
   
