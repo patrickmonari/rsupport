@@ -1,4 +1,26 @@
-# Packages I generally use
+# Function to check and install packages
+install_if_missing <- function(package) {
+  if (!require(package, character.only = TRUE)) {
+    install.packages(package, dependencies = TRUE)
+    library(package, character.only = TRUE)
+  }
+}
+
+# List of packages to use
+packages <- c(
+  "tidyverse", "lme4", "lmerTest", "cowplot", "plyr", "dplyr", "readr", "tidyr", 
+  "purrr", "effectsize", "DataExplorer", "GGally", "ggfortify", "ghibli", "shiny", 
+  "ggpubr", "rstatix", "plotly", "umap", "tsne", "viridis", "RColorBrewer", 
+  "see", "performance", "patchwork", "outliers", "readxl", "tibble", "flextable", 
+  "kableExtra", "gt", "gtsummary", "lsr", "apaTables", "knitr", "forcats", 
+  "hrbrthemes", "vegan", "iml", "tidyposterior", "skimr", "tidymodels", 
+  "nnet", "kknn", "sjPlot", "sjmisc", "effects", "sjstats", "webshot", "Hmisc", "conflicted"
+)
+
+# Install and load packages
+lapply(packages, install_if_missing)
+
+# Packages that need to be loaded
 library(tidyverse)
 library(lme4)
 library(lmerTest)
@@ -16,11 +38,10 @@ library(ghibli)
 library(shiny)
 library(ggpubr)
 library(rstatix)
-library(plotly) 
-library(umap) 
+library(plotly)
+library(umap)
 library(tsne)
 library(viridis)
-
 
 # Extras:
 library(RColorBrewer)
@@ -50,7 +71,7 @@ library(tidymodels)
 library(nnet)
 library(kknn)
 library(sjPlot)
-library(sjmisc) 
+library(sjmisc)
 library(effects)
 library(sjstats)
 library(webshot)
@@ -68,3 +89,6 @@ conflicts_prefer(readr::cols)
 conflicts_prefer(base::`:`)
 conflicts_prefer(broom::bootstrap)
 conflicts_prefer(svglite::font_face)
+conflicts_prefer(lmerTest::lmer)
+conflicts_prefer(dplyr::recode)
+conflicts_prefer(dplyr::summarise)
