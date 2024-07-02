@@ -14,7 +14,9 @@ packages <- c(
   "see", "performance", "patchwork", "outliers", "readxl", "tibble", "flextable", 
   "kableExtra", "gt", "gtsummary", "lsr", "apaTables", "knitr", "forcats", 
   "hrbrthemes", "vegan", "iml", "tidyposterior", "skimr", "tidymodels", 
-  "nnet", "kknn", "sjPlot", "sjmisc", "effects", "sjstats", "webshot", "Hmisc", "conflicted"
+  "nnet", "kknn", "sjPlot", "sjmisc", "effects", "sjstats", "webshot", "Hmisc", "conflicted",
+  "rempsyc", "glmmTMB", "caret", "psych", "gridExtra", "ggfortify", "scatterplot3d",
+  "rgl", "plot3D", "webshot2", "emmeans", "pheatmap", "MASS", "mvtnorm"
 )
 
 # Install and load packages
@@ -77,6 +79,20 @@ library(sjstats)
 library(webshot)
 library(Hmisc)
 library(conflicted)
+library(rempsyc)
+library(glmmTMB)
+library(caret)
+library(psych)
+library(gridExtra)
+library(ggfortify)
+library(scatterplot3d)
+library(rgl)
+library(plot3D)
+library(webshot2)
+library(emmeans)
+library(pheatmap)
+library(MASS)
+library(mvtnorm)
 
 tidymodels_prefer()
 
