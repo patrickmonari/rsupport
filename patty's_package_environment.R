@@ -16,7 +16,8 @@ packages <- c(
   "hrbrthemes", "vegan", "iml", "tidyposterior", "skimr", "tidymodels", 
   "nnet", "kknn", "sjPlot", "sjmisc", "effects", "sjstats", "webshot", "Hmisc", "conflicted",
   "rempsyc", "glmmTMB", "caret", "psych", "gridExtra", "ggfortify", "scatterplot3d",
-  "rgl", "plot3D", "webshot2", "emmeans", "pheatmap", "MASS", "mvtnorm"
+  "rgl", "plot3D", "webshot2", "emmeans", "pheatmap", "MASS", "mvtnorm", 
+  "fitdistrplus", "GLMMadaptive", "DHARMa"
 )
 
 # Install and load packages
@@ -93,6 +94,9 @@ library(emmeans)
 library(pheatmap)
 library(MASS)
 library(mvtnorm)
+library(fitdistrplus)
+library(GLMMadaptive)
+library(DHARMa)
 
 tidymodels_prefer()
 
