@@ -11,6 +11,7 @@ devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/summar
 # Model table maker
 devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/generate_lm_table.R?raw=true")
 devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/generate_lmer_table.R?raw=true")
+devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/generate_zinb_table.R?raw=true")
 devtools::source_url("https://github.com/patrickmonari/rsupport/blob/main/combine_tables_into_grid.R?raw=true")
 
 # For bootstrapped coefficient estimates
