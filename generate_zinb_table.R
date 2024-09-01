@@ -1,4 +1,6 @@
-generate_zinb_table <- function(data, formula, output_label = "ZINB_table", caption_label = "Zero-inflated negative binomial model") {
+generate_zinb_table <- function(data, formula, output_label = "ZINB_table", 
+                                caption_label = "Zero-inflated negative binomial model", 
+                                vwidth = 700, vheight = 300, zoom = 2.75) {
   
   # Silly workaround to make sure formula_str updates in the global environment
   formula_str <<- formula
@@ -102,7 +104,10 @@ generate_zinb_table <- function(data, formula, output_label = "ZINB_table", capt
   webshot2::webshot(
     url = html_file_name,
     file = png_file_name,
-    selector = "body"
+    selector = "body",
+    vwidth = vwidth,  
+    vheight = vheight,
+    zoom = zoom
   )
   
   cat("PNG generated successfully!\n")
